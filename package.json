@@ -1,0 +1,14 @@
+{
+  "thumbnail": "https://wnow-modules.s3.amazonaws.com/icon_stroke_media_videoplayer.svg",
+  "tag": "griffin",
+  "affiliates": [
+    "kotv",
+    "kwtv"
+  ],
+  "propTypes": {
+  },
+  "defaultProps": {
+  },
+  "propChoices": {
+  }
+}
