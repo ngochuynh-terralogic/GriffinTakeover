@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-// import BannerController from 'components/custom/griffin/BannerController';
+import BannerController from 'components/custom/griffin/BannerController';
 
 const jQuery = window['$'];
 const stationCall = window.location.hostname.toLowerCase() === 'www.news9.com' ? 'kwtv' : 'kotv';
@@ -31,8 +31,8 @@ class Takeover extends Component {
       .then((responseJson) => { this.buildState(responseJson); })
       .catch((error) => { console.log(`Failed to retrieve Takeover data: ${error}`); });
 
-//     let bannerController = new BannerController(stationID);
-//     bannerController.getCache(this.addBanner);
+    let bannerController = new BannerController(stationID);
+    bannerController.getCache(this.addBanner);
   }
 
   addBanner = (data) => {
