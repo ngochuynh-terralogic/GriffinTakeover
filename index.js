@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import BannerController from './BannerController.js';
+import BannerController from 'components/custom/griffin/BannerController';
 
 const jQuery = window['$'];
 const stationCall = window.location.hostname.toLowerCase() === 'www.news9.com' ? 'kwtv' : 'kotv';
